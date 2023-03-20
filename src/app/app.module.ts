@@ -8,10 +8,22 @@ import { ResultadoComponent } from './pages/imc/components/resultado/resultado.c
 import { DiretivasComponent } from './pages/diretivas/diretivas.component';
 import { EmitirEventosComponent } from './pages/emitir-eventos/emitir-eventos.component';
 import { FilhoComponent } from './pages/emitir-eventos/components/filho/filho.component';
+import { PipesComponent } from './pages/pipes/pipes.component';
+import { RequisicoesComponent } from './pages/requisicoes/requisicoes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, ImcComponent, ResultadoComponent, DiretivasComponent, EmitirEventosComponent, FilhoComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    ImcComponent,
+    ResultadoComponent,
+    DiretivasComponent,
+    EmitirEventosComponent,
+    FilhoComponent,
+    PipesComponent,
+    RequisicoesComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
